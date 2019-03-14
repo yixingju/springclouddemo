@@ -10,6 +10,7 @@
         <module name="dm-demo-consumer-second" />
         <module name="dm-demo-provider" />
         <module name="dm-demo-provider (1)" />
+        <module name="dm-gateway-zuul" />
         <module name="eureka" />
         <module name="eureka-client" />
         <module name="springclouddemo" />
@@ -22,6 +23,7 @@
       <module name="dm-demo-consumer-second" options="-parameters" />
       <module name="dm-demo-provider" options="-parameters" />
       <module name="dm-demo-provider (1)" options="-parameters" />
+      <module name="dm-gateway-zuul" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
     </option>
