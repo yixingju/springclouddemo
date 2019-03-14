@@ -1,0 +1,24 @@
+server:
+  port: 38081
+spring:
+  application:
+    name: dm-demo-consumer-second  #暴露注册到eureka中的服务的名字
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin123@localhost:7077/eureka   #指定注册中心地址
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+turbine:
+  cluster-name-expression: "'default'"
+  combine-host-port: true
+  app-config: dm-demo-consumer,dm-demo-consumer-second

@@ -1,0 +1,14 @@
+server:
+  port: 7077
+eureka:
+  client:
+    fetch-registry: false  #因为我自己就是eureka 所以不需要向注册中心中获取信息，所以写成false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka  #暴露注册中心地址。
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin123

@@ -1,0 +1,10 @@
+
+server:
+  port: 18083
+spring:
+  application:
+    name: dm-demo-provider  #暴露注册到eureka中的服务的名字
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin123@localhost:7077/eureka   #指定注册中心地址

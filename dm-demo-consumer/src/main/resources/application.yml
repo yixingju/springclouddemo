@@ -1,0 +1,23 @@
+server:
+  port: 38080
+spring:
+  application:
+    name: dm-demo-consumer  #暴露注册到eureka中的服务的名字
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin123@localhost:7077/eureka   #指定注册中心地址
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+dm-demo-provider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule  #常用ribbon负载均衡策略:RandomRule 随机  RoundRobinRule 轮询  WeightedResponseTimeRule 权重
