@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: dm-demo-consumer  #暴露注册到eureka中的服务的名字
+  rabbitmq:
+    host: 47.102.119.166
+    port: 5672
+    username: guest
+    password: guest
+  sleuth:
+    sampler:
+      percentage: 1.0
 eureka:
   client:
     service-url:
@@ -18,6 +26,10 @@ management:
       exposure:
         include: hystrix.stream
 
+---
 dm-demo-provider:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule  #常用ribbon负载均衡策略:RandomRule 随机  RoundRobinRule 轮询  WeightedResponseTimeRule 权重
+---
+#logging:
+  #level: info

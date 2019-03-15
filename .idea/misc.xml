@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/dm-demo-consumer-second/pom.xml" />
         <option value="$PROJECT_DIR$/dm-demo-provider-second/pom.xml" />
         <option value="$PROJECT_DIR$/dm-gateway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/dm-sleuth-server/pom.xml" />
       </list>
     </option>
   </component>

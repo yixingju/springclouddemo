@@ -11,6 +11,7 @@
         <module name="dm-demo-provider" />
         <module name="dm-demo-provider (1)" />
         <module name="dm-gateway-zuul" />
+        <module name="dm-sleuth-server" />
         <module name="eureka" />
         <module name="eureka-client" />
         <module name="springclouddemo" />
@@ -19,11 +20,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="dm-demo-consumer" options="-parameters" />
+      <module name="dm-demo-consumer" options="" />
       <module name="dm-demo-consumer-second" options="-parameters" />
-      <module name="dm-demo-provider" options="-parameters" />
+      <module name="dm-demo-provider" options="" />
       <module name="dm-demo-provider (1)" options="-parameters" />
       <module name="dm-gateway-zuul" options="-parameters" />
+      <module name="dm-sleuth-server" options="" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
     </option>

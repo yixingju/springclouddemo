@@ -1,13 +1,13 @@
 spring:
   application:
-  name: dm-gateway-zuul
+    name: dm-gateway-zuul
 server:
   port: 7600
 
 zuul:
   routes:
-  dm-user-consumer: /demo/**
+    dm-demo-consumer: /demo/**
 eureka:
   client:
-  service-url:
-  defaultZone: http://admin:admin123@localhost:7077/eureka/
+    service-url:
+      defaultZone: http://admin:admin123@localhost:7077/eureka/
