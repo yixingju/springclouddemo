@@ -1,0 +1,16 @@
+server:
+  port: 7700
+spring:
+  rabbitmq:
+    host: 47.102.119.166
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://47.102.119.166:3306/dm_zipkin?useUnicode=true&characterEndcoding=gbk&zeroDataTimeBehavior=convertToNull
+    username: root
+    password: 110119
+    driver-class-name: com.mysql.jdbc.Driver
+zipkin:
+  storage:
+    type: mysql
